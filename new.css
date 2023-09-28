@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 20px; */
+  }
+  
+  header {
+    background-color: #333;
+    opacity: 0.9;
+    color:#fff;
+    position:sticky;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+   
+  
+  }
+  .head{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center; 
+    padding: 5px;
+  
+  }
+  .head2 li{
+   padding: 50px;
+  }
+  .logo{
+    margin: 10px;
+    /* margin-right: 250px; */
+  }
+  .logo a img:hover{
+    background-color: antiquewhite;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+  }
+  
+  nav li {
+    display: inline;
+    /* margin-right: 40px; */
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  nav li a:hover {
+    color: #ff7f50;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: #ff7f50;
+    min-width: 120px;
+    /* top: 20px; */
+    /* margin-top: 0; */
+    
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 30px;
+  }
+  
+  .dropdown-content li {
+    display: block;
+    padding: 10px;
+  }
+  
+  
+  ul.dropdown-content{
+    /* margin-left: 250px, auto;  */
+    /* left: 6px; */
+  }
+  
+  .dropdown-content li a{
+    color: #453f3c; 
+    font-size: 18px ;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .carousel{
+    margin: 5px 0;
+    /* margin-top: 3.5% ; */
+
+}
+
+.carousel::before{
+   content: "";
+   position:absolute; 
+   /* top: 0px; */
+   left: 0px;
+   background: url("http://sportspromotionfoundation.com/assets/home-page/about-bg.jpg") no-repeat center center/cover;
+   height: 100%;
+   width: 100%;
+  
+}
+ol.carousel-indicators{
+  z-index: 1;
+}
+
+
+  .enquiry-form {
+    /* Enquiry form styles go here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height:100%;
+    /* opacity: 0.9; */
+  }
+  
+  .text {
+    font-size: 15px;
+    padding-left: 60px;
+    padding-right: 20px;
+    width:40%;
+  }
+  .font{
+    font-style: italic;
+  }
+  .container2::before{
+    content: "";
+    position:absolute; 
+   /* top: 0px; */
+   left: 0px;
+    background: url("http://sportspromotionfoundation.com/assets/home-page/gallery-bg.jpg") no-repeat center center/cover;
+    height: 100%;
+   width: 100%;
+   z-index: -1;
+  }
+  
+  /* .image1{
+    border-radius: 50%;
+    border: 5px solid black;
+  } */
+  /* h3.text1{
+   padding-left: 100px;
+
+  } */
+
+  .container3 {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+  
+  .image3 {
+    max-width: 100%;
+    max-height:100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    /* padding-top: 50px; */
+    margin-top: 100px;
+  }
+  
+  .text3 {
+    color: #fefefe;
+    /* font-size: 20px;*/
+    padding-left: 20px; 
+    font-size: 15px;
+    /* padding-left: 60px; */
+    padding-right: 20px;
+    width:50%;
+  }
+  .container3::before{
+    content: "";
+    position: absolute;
+    background: url("	http://sportspromotionfoundation.com/assets/home-page/testimonial-bg.jpg")no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-attachment: fixed;
+    /* opacity: 0.9; */
+
+  }
+  
+  .popup {
+    display: none;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .popup1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0 5px 0;
+  }
+  .popimg{
+    padding-left: 15%;
+   
+  }
+  /* footer CSS*/
+/*new*/
+
+footer {
+  background-color: #333;
+  /* opacity: 0.9; */
+  color: #fff;
+  padding: 20px;
+  background: url("http://sportspromotionfoundation.com/assets/home-page/footer-bg-2.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 5%; */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px;
+}
+.contact-form::before{
+  content: "";
+  position: absolute;
+  background: url("	http://sportspromotionfoundation.com/assets/home-page/texture.png")no-repeat center center/cover;
+  left: 0;
+  height:100%;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+}
